@@ -42,6 +42,17 @@ class Agenda_Contato_Form_activity: Activity() {
             edtEmail.setText("")
 
         }
+
+        btnPesquisar.setOnClickListener {
+            for (contato in lista) {
+                if (contato.nome.contains(edtNome.text)) {
+                    edtNome.setText(contato.nome)
+                    edtEmail.setText(contato.email)
+                    edtTelefone.setText(contato.telefone)
+                    break
+                }
+            }
+        }
     }
 
 }
