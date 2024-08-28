@@ -1,6 +1,7 @@
 package com.example.aula_04
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -20,12 +21,14 @@ class Agenda_Contato_Form_activity: Activity() {
         super.onCreate(bundle)
         setContentView(R.layout.agenda_contato_form_layout)
 
+
         val edtNome : EditText = findViewById(R.id.edt_nome)
         val edtEmail = findViewById<EditText>(R.id.edt_email)
         val edtTelefone = findViewById<EditText>(R.id.edt_telefone)
 
         val btnGravar = findViewById<Button>(R.id.btn_gravar)
         val btnPesquisar = findViewById<Button>(R.id.btn_pesquisar)
+        val btnDetalhes = findViewById<Button>(R.id.btnDetalhes)
 
         btnGravar.setOnClickListener{
             val contato = Contato(
@@ -53,6 +56,15 @@ class Agenda_Contato_Form_activity: Activity() {
                 }
             }
         }
+
+        btnDetalhes.setOnClickListener{
+            val intent = Intent(this, Contato_Detalhes_layout::class.java)
+
+            val bundleData = Bundle()
+            bundleData.putString("Nome", edtNome.text.toString())
+            inten
+        }
+
     }
 
 }
