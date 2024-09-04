@@ -59,10 +59,10 @@ class Agenda_Contato_Form_activity: Activity() {
 
         btnDetalhes.setOnClickListener{
             val intent = Intent(this, Contato_Detalhes_layout::class.java)
-
             val bundleData = Bundle()
             bundleData.putString("Nome", edtNome.text.toString())
-            inten
+            intent.putExtras( bundleData )
+            startActivity(intent)
         }
 
     }
