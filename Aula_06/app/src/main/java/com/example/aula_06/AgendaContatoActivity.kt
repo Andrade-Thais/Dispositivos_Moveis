@@ -105,7 +105,16 @@ class AgendaContatoActivity : Activity() {
 
                     for (contato in contatos.values) {
                         Log.d("AGENDA", "Contato: $contato")
+                        if (contato != null) {
+                            runOnUiThread {
+                                if (contato.nome.contains(nome.text)) {
+                                    nome.setText(contato.nome)
+                                    email.setText(contato.email)
+                                    telefone.setText(contato.telefone)
 
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -114,8 +123,8 @@ class AgendaContatoActivity : Activity() {
         }
 
     }
+}
 
-    }
 
 
 
