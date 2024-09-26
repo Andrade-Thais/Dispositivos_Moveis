@@ -1,4 +1,4 @@
-package com.example.pet_cadastro
+package com.example.pet_cadastro.model
 
 data class Pet(var nome : String = "",
                var raca : String = "",

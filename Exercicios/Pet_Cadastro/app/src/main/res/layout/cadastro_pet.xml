@@ -79,7 +79,6 @@
                 android:ems="10"
                 android:hint="Nome do Pet"
                 android:inputType="text"
-                android:background="@drawable/edittext_borda" />
         </TableRow>
 
         <TableRow
@@ -100,7 +99,6 @@
                 android:ems="10"
                 android:hint="Raça"
                 android:inputType="text"
-                android:background="@drawable/edittext_borda" />
         </TableRow>
 
         <TableRow
@@ -121,7 +119,6 @@
                 android:ems="10"
                 android:hint="Peso em Kg ex: 10,70"
                 android:inputType="number|numberDecimal"
-                android:background="@drawable/edittext_borda" />
         </TableRow>
 
         <TableRow
@@ -142,7 +139,6 @@
                 android:ems="10"
                 android:hint="__/__/___"
                 android:inputType="date"
-                android:background="@drawable/edittext_borda" />
         </TableRow>
     </TableLayout>
 

@@ -1,11 +1,11 @@
-package com.example.petshop.activity
+package com.example.pet_cadastro.activity
 
 import android.app.Activity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.pet_cadastro.Pet
+import com.example.pet_cadastro.model.Pet
 import com.example.pet_cadastro.R
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
